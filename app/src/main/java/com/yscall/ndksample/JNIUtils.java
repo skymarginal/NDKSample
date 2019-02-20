@@ -9,6 +9,10 @@ package com.yscall.ndksample;
 
 public class JNIUtils {
 
+    static {
+        System.loadLibrary("hello-lib");
+    }
+
     public static native String getHelloString();
 
 }
